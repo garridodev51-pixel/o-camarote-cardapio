@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>O Camarote — Cardápio</title>
+<style>
+  :root { --cream:#f6f0e6; --ink:#1c1a16; --brown:#6b4f3a; --green:#2c3a2e; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Georgia,serif; background:var(--cream); color:var(--ink); }
+  header { background:linear-gradient(180deg,#2c3a2e,#1c1a16); color:#f6f0e6; text-align:center; padding:28px 16px 22px; }
+  header .brand { font-size:clamp(28px,6vw,44px); letter-spacing:4px; font-weight:700; }
+  header .sub { margin-top:6px; letter-spacing:3px; font-size:12px; text-transform:uppercase; opacity:.85; }
+  header p { margin-top:10px; font-style:italic; font-size:14px; opacity:.8; }
+  nav { display:flex; justify-content:center; gap:8px; flex-wrap:wrap; padding:14px 12px; background:#efe6d6; position:sticky; top:0; z-index:10; border-bottom:1px solid #d9cbb4; }
+  nav a { text-decoration:none; color:var(--ink); background:#fff; border:1px solid #d9cbb4; padding:8px 14px; border-radius:999px; font-size:13px; }
+  nav a:hover { background:var(--green); color:#fff; border-color:var(--green); }
+  main { max-width:920px; margin:0 auto; padding:20px 14px 48px; }
+  section { margin-bottom:36px; }
+  section h2 { font-size:20px; letter-spacing:2px; text-transform:uppercase; margin:8px 0 14px; text-align:center; color:var(--brown); }
+  .card { background:#fff; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(28,26,22,.12); border:1px solid #e6dccb; }
+  .card img { width:100%; height:auto; display:block; }
+  footer { text-align:center; padding:24px 16px 40px; color:#6b4f3a; font-size:13px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">O CAMAROTE</div>
+    <div class="sub">Cardápio Digital</div>
+    <p>Sabores que reúnem boas companhias</p>
+  </header>
+  <nav>
+    <a href="#cafeteria">Cafeteria</a>
+    <a href="#macarronadas">Macarronadas</a>
+    <a href="#pizzas">Pizzas</a>
+  </nav>
+  <main>
+    <section id="cafeteria">
+      <h2>Cafeteria</h2>
+      <div class="card"><img src="cafeteria.jpeg" alt="Cardápio Cafeteria O Camarote"/></div>
+    </section>
+    <section id="macarronadas">
+      <h2>Macarronadas</h2>
+      <div class="card"><img src="macarronadas.jpeg" alt="Cardápio Macarronadas O Camarote"/></div>
+    </section>
+    <section id="pizzas">
+      <h2>Pizzas</h2>
+      <div class="card"><img src="pizzas.jpeg" alt="Cardápio Pizzas O Camarote"/></div>
+    </section>
+  </main>
+  <footer><strong>O CAMAROTE</strong><br/>Comida boa tem mais encontro.</footer>
+</body>
+</html>
